@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import '../models/favorites.dart';
+import '../models/favorites_model.dart';
 import 'favorites_page.dart';
 
 class HomePage extends StatelessWidget {

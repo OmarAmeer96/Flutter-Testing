@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'models/favorites.dart';
+import 'models/favorites_model.dart';
 import 'screens/favorites_page.dart';
-import 'screens/home.dart';
+import 'screens/home_page.dart';
 
 void main() {
   runApp(const TestingApp());
