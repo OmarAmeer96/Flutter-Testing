@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_testing_methods/screens/album_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../models/favorites_model.dart';
@@ -28,7 +29,12 @@ class HomePage extends StatelessWidget {
         itemCount: 100,
         cacheExtent: 20.0,
         padding: const EdgeInsets.symmetric(vertical: 16),
-        itemBuilder: (context, index) => ItemTile(index),
+        itemBuilder: (context, index) => InkWell(
+          child: ItemTile(index),
+          onTap: () {
+            context.go(AlbumPage.routeName);
+          },
+        ),
       ),
     );
   }
